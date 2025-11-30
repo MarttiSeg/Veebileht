@@ -1,0 +1,217 @@
+.pealkiri1{
+    color: aqua;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* html ja body - lehe tausta ja põhifondi määramine */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Inter, 'Trebuchet MS', Arial, sans-serif;
+    background-color: #eef6fb;
+    color: #222;
+}
+
+/* body - horisontaalne vahe vasakult ja paremalt servast */
+body {
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+/* .container - sisu piiramise klass */
+.container {
+    max-width: 1000px;
+    margin: 28px auto;
+    padding: 18px;
+}
+
+/* Pealkirijaotis */
+header {
+    text-align: center;
+    margin-bottom: 18px;
+    padding: 18px 22px;
+    background-color: #f7fbff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(20,40,80,0.06);
+}
+
+/* Põhipealkiri */
+header h1 {
+    font-size: 2.2rem;
+    margin: 6px 0 6px 0;
+    color: #063b5a;
+    font-weight: 800;
+    letter-spacing: 0.4px;
+    text-shadow: 0 6px 18px rgba(6,59,90,0.06);
+}
+
+/* Alapealkiri */
+header p {
+    color: #12566f;
+    margin: 6px auto 14px auto;
+    font-size: 1.05rem;
+    font-weight: 600;
+    max-width: 820px;
+}
+
+/* Tabel tervikuna */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0 22px 0;
+    background: #fff;
+    box-shadow: 0 6px 18px rgba(30,50,90,0.06);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Tabeli lahtrid (pealkirjad ja sisu) */
+th, td {
+    padding: 10px 12px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+/* Tabeli pealkirja lahtrid (nt "Shortcut", "Kirjeldus") */
+th {
+    background-color: #f7fbff;
+    border-bottom: 1px solid #e6eef8;
+    font-weight: 700;
+    color: #0b2b4a;
+}
+
+/* Üldine klahvi stiil (kõik nupud) */
+.kbd {
+    display: inline-block;
+    padding: 6px 10px;
+    margin: 0 6px 6px 0;
+    border-radius: 6px;
+    background: linear-gradient(180deg,#ffffff,#f3f6fb);
+    border: 1px solid #d7e3f6;
+    box-shadow: 0 2px 0 rgba(11,43,74,0.04), inset 0 -1px 0 rgba(11,43,74,0.02);
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: #08304f;
+    vertical-align: middle;
+}
+
+/* Ctrl klahv */
+.kbd.mod {
+    background: linear-gradient(180deg,#f8f2ff,#efe6ff);
+    color: #3b0456;
+    border-color: #e8d7fb;
+}
+
+/* Windows klahv */
+.kbd.win {
+    background: linear-gradient(180deg,#effaf6,#e8fbf2);
+    color: #05523a;
+    border-color: #cfeee2;
+}
+
+/* Tähed ja numbrid ja F klahvid */
+.kbd.letter,
+.kbd.number {
+    background: linear-gradient(180deg,#fff9ed,#fff5e3);
+    color: #6a4600;
+    border-color:#f3e2b8;
+}
+
+/* Spetsiaalsed klahvid (Shift, Tab, Alt) */
+.kbd.special {
+    background: linear-gradient(180deg,#e8f4ff,#eaf8ff);
+    color: #074c6b;
+    border-color: #cfe8fb; 
+}
+
+/* Klahvide rühm (nt "Ctrl + Shift + T") */
+.keys {
+    display: inline-flex;
+    gap: 6px;
+    align-items: center;
+}
+
+/* Navigatsiooni nupu container */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 12px 0 30px 0;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Navigatsiooni nupud (lingid) */
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 14px;
+    border-radius: 10px;
+    background: linear-gradient(180deg,#0b66b3,#08579e);
+    box-shadow: 0 6px 18px rgba(11,102,179,0.14);
+    border: 1px solid rgba(11,102,179,0.12);
+    font-weight: 700;
+    transition: transform .12s ease, box-shadow .12s ease, opacity .12s ease; /* Sujuvus */
+}
+
+/* Navigatsiooni nupud, kui hiir on peal */
+nav a:hover {
+    transform: translateY(-3px);                     
+    box-shadow: 0 12px 28px rgba(11,102,179,0.18); 
+}
+
+/* Vähem silmatorkavad nupud (alalehtedel) */
+nav a.secondary {
+    background: transparent;
+    color: #0b66b3;
+    border: 1px solid rgba(11,102,179,0.08);
+    box-shadow: none;
+}
+
+/* Logo pilt headeri sees */
+.logo {
+    display: inline-block;
+    vertical-align: middle;
+    width: 56px;
+    height: 56px;
+    margin-right: 12px;
+}
+
+/* pealkirja joondamine (blokk, et oleks üksi real) */
+header h1 {
+    display: block;
+}
+
+header nav {
+    margin-top: 24px
+}
+
+/* "või" eraldaja stiil (/) */
+.sep {
+    display: inline-block;
+    margin: 0 8px;
+    color: #6b7c8a;
+    font-weight: 700;
+}
+
+   /* Ekraanitundlikkus */
+@media (max-width: 720px) {
+
+    .container {
+        padding: 12px;
+    }
+    
+    th, td {
+        padding: 8px 10px;
+    }
+    
+    .kbd {
+        padding: 5px 8px;
+        font-size: 0.9rem;
+    }
+}
+
+
