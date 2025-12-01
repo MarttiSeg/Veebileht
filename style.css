@@ -180,13 +180,15 @@ nav a.secondary {
     margin-right: 12px;
 }
 
-/* pealkirja joondamine (blokk, et oleks üksi real) */
+/* pealkirja joondamine */
 header h1 {
-    display: block;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
 }
 
 header nav {
-    margin-top: 24px
+    margin-top: 24px;
 }
 
 /* "või" eraldaja stiil (/) */
